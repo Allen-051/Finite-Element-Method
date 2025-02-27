@@ -13,5 +13,4 @@ for r in r_table:
 
 for r in r_table:
     ans_array = [geomatric_sum(r,m) for m in m_table + add]
-    print(', '.join(f'{ans2:.6f}' for ans2 in ans_array))
-
+    print(', '.join(f'{ans2:.6f}' for ans2 in ans_array)) # 儲存到小數點後6位
