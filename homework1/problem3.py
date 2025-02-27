@@ -1,4 +1,4 @@
-# 計算函數積分，以黎曼和逼近
+# problem 3 計算函數積分，以黎曼和逼近
 import numpy as np 
 def f(x):
     return x**2 * np.sqrt(x**3 + 1)
