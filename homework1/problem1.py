@@ -1,3 +1,4 @@
+# problem 1 級數和
 def pr1(n):
     m1 = 1
     m2 = 0
