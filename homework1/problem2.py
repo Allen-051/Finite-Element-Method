@@ -1,4 +1,4 @@
-# 計算等比級數和
+# problem 2 計算等比級數和
 def geomatric_sum(a, b):
     if a == 1:
         return b
