@@ -7,6 +7,7 @@ def geomatric_sum(a, b):
 # 以陣列計算題目數值   
 r_table = [0.1, 0.25, 0.66, 0.99]
 m_table = [3, 10, 50, 200, 400]
+print('The value of 1/(1-r)：')
 for r in r_table:
     add = [1 / (1-r)]
     print(add) # 1/ (1-r)的值
