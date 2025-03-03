@@ -39,14 +39,16 @@ def taylor_series(x, n):
         sum += coef * x**(2*i)
     return sum
 
-# 設定兩條線分別劃出泰勒級數的前3項和前6項
-y1 = taylor_series(x_axis, 3)
-y2 = taylor_series(x_axis, 6)
+# 設定三條線分別劃出泰勒級數的前1項、前3項、前6項
+y1 = taylor_series(x_axis, 1)
+y2 = taylor_series(x_axis, 3)
+y3 = taylor_series(x_axis, 6)
 # 劃出cos(x)圖形、y1、y2
 plt.figure(figsize = (10,6))
 plt.plot(x_axis, np.cos(x_axis), label = 'cos(x)', color = 'black', linestyle = '-')
-plt.plot(x_axis, y1, label = 'Tatlor_series-n=3', color = 'red', linestyle = '--')
-plt.plot(x_axis, y2, label = 'Tatlor_series-n=6', color = 'blue', linestyle = 'dashdot')
+plt.plot(x_axis, y2, label = 'Tatlor_series-n=1', color = 'orange', linestyle = 'dot')
+plt.plot(x_axis, y2, label = 'Tatlor_series-n=3', color = 'red', linestyle = '--')
+plt.plot(x_axis, y3, label = 'Tatlor_series-n=6', color = 'blue', linestyle = 'dashdot')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.xlim(-5, 5)
