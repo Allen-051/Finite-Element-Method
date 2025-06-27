@@ -1,0 +1,26 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[margin=2.5cm]{geometry}  % 僅載入一次，避免衝突
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setCJKmainfont{DFKai-SB}              % 中文字型，Windows 通用
+\setmainfont{Times New Roman}          % 英文用 Times New Roman
+
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\begin{document}
+	
+	這是中文標楷體\\
+	This is English Times New Roman
+	
+	\section*{數學式範例}
+	\[
+	f(x) = \int_0^1 x^2 \, dx = \frac{1}{3}
+	\]
+	
+	\section*{圖片範例}
+	% 若還沒放圖片，可先註解下一行
+	%\includegraphics[width=0.6\textwidth]{example.jpg}
+	
+\end{document}

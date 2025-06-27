@@ -18,7 +18,7 @@ def find_umax(csv_file):
     u2_max = u2[max_idx]
 
     # 找到對應的 Joint index（來自第 1 列）
-    joint_index = df.iloc[max_idx + 1, 0]  # +1 因為跳過第 0 欄
+    joint_index = df.iloc[max_idx , 0]  # +1 因為跳過第 0 欄
 
     return joint_index, umax, u1_max, u2_max
     
